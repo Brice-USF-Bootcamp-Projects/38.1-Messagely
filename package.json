@@ -1,10 +1,10 @@
 {
   "name": "messagely",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest -i"
+    "test": "jest -i",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +18,14 @@
     "jsonwebtoken": "^8.3.0",
     "pg": "^8.3.3",
     "supertest": "^4.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brice-USF-Bootcamp-Projects/38.1-Messagely.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Brice-USF-Bootcamp-Projects/38.1-Messagely/issues"
+  },
+  "homepage": "https://github.com/Brice-USF-Bootcamp-Projects/38.1-Messagely#readme",
+  "description": ""
 }
