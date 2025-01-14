@@ -16,6 +16,26 @@ describe("Test User class", function () {
     });
   });
 
+
+  beforeEach(async () => {
+    // Clear and reset tables
+    await db.query("DELETE FROM messages");
+    await db.query("DELETE FROM users");
+    await db.query("ALTER SEQUENCE messages_id_seq RESTART WITH 1");
+  
+    // Seed users
+    await db.query(`
+      INSERT INTO users (username, password, first_name, last_name, phone, join_at, last_login_at)
+      VALUES 
+        ('test1', 'password1', 'Test', 'User1', '1234567890', current_timestamp, current_timestamp),
+        ('test2', 'password2', 'Test', 'User2', '0987654321', current_timestamp, current_timestamp)
+    `);
+  });
+
+
+
+
+
   test("can register", async function () {
     let u = await User.register({
       username: "joel",
