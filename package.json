@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest -i",
+    "test": "jest",
     "start": "node server.js"
   },
   "author": "",
@@ -27,5 +27,8 @@
     "url": "https://github.com/Brice-USF-Bootcamp-Projects/38.1-Messagely/issues"
   },
   "homepage": "https://github.com/Brice-USF-Bootcamp-Projects/38.1-Messagely#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
 }
